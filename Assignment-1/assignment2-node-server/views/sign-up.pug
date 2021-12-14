@@ -1,0 +1,19 @@
+html
+head 
+body
+    style(type='text/css').
+        .submit:before {content:'Submit'}
+
+    form(action='/sign-up', method='POST')
+    
+      | Username: 
+      input(type='text', name='username')
+      br
+      | Email: 
+      input(type='email', name='email')
+      br
+      | Password: 
+      input(type='password', name='password')
+      br
+      button(type='submit', value='Submit' class='submit')
+    
